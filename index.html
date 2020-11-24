@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Champions.css">
+    <script src="scripts/jquery-3.5.1.min.js"></script>
+    <script src="scripts/champions.js"></script>
+    <script src="scripts/script.js"></script>
+</head>
+<style>
+    body {
+        background: url(luci.jpg) no-repeat;
+    }
+    
+    .Champions {
+        box-shadow: inset 0px -10px 24px -29px #29bbff;
+        background: linear-gradient(to bottom, #2dabf9 5%, #0688fa 100%);
+        background-color: #2dabf9;
+        border-radius: 10px;
+        border: 6px solid #0b0e07;
+        display: inline-block;
+        cursor: pointer;
+        color: #ffffff;
+        font-family: Arial;
+        font-size: 15px;
+        padding: 9px 23px;
+        text-decoration: none;
+        text-shadow: -13px -5px 8px #263666;
+    }
+    
+    .Champions:hover {
+        background: linear-gradient(to bottom, #0688fa 5%, #2dabf9 100%);
+        background-color: #0688fa;
+    }
+    
+    .Champions:active {
+        position: relative;
+        top: 1px;
+    }
+    
+    h1 {
+        max-width: max-content;
+        color: white;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    
+    h3 {
+        font-style: italic;
+        color: white;
+        font-size: 2em;
+        margin-block-start: 0.67em;
+        margin-block-end: 0.67em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+    }
+</style>
+
+
+<body>
+
+    <div>
+        <a href="#" class="Champions">Champions </a>
+    </div>
+    <div class="content-area">
+        <div class="wrapper">
+            <h1>Q.gg</h1>
+            <h3>League of Legends</h3>
+        </div>
+    </div>
+    <div class="search-area">
+        <input id="search" type="search" placeholder="Search..." autofocus onkeyup="listChampions()" />
+    </div>
+    <div class="search-results">
+        <table width=90% id="search-results" style="display: none;">
+
+        </table>
+    </div>
+
+
+
+    <!-- <div id="buba"> 
+
+    </div> -->
+
+</body>
